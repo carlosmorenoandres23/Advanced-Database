@@ -9,7 +9,7 @@ The Storage Manager is a module designed to manage files on disk and provide ope
 4. Shubham Kapopara (A20561911)
 
 
-## Aim ##
+## Aim 
 The aim of this assignment is to implement a storage manager capable of performing the below tasks:
 - > Creating, opening, and closing files.
 - > Writing blocks from memory to a file.

@@ -54,7 +54,7 @@ Initialization of Strorage manager
 
 
 ## Capacity Management ##
--> **RC ensureCapacity** : Ensures that the file has a minimum capacity of 'numberOfPages' by appending empty blocks if necessary.  
+-> **ensureCapacity** : Ensures that the file has a minimum capacity of 'numberOfPages' by appending empty blocks if necessary.  
 
 
 ## In Summary ##

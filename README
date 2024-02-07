@@ -1,0 +1,61 @@
+## Storage Manager CS-525 Assignment 1
+The Storage Manager is a module designed to manage files on disk and provide operations for reading and writing blocks of data. This module deals with pages (blocks) of a fixed size (PAGE_SIZE), and it is a fundamental component of many database systems. This README provides an overview of the Storage Manager project, its functionalities, and how to use it.
+
+
+## Group Members
+1. Carlos Moreno Andres (A20553013)
+2. Pablo Gomez
+3. Anshuman Raturi (A20531913)
+4. Shubham Kapopara (A20561911)
+
+
+## Aim ##
+The aim of this assignment is to implement a storage manager capable of performing the below tasks:
+- > Creating, opening, and closing files.
+- > Writing blocks from memory to a file.
+- > Reading blocks from a file into memory.
+- > Navigating through blocks (Example: moving to the previous or next block).
+- > Making certain that a given number of pages can be stored in a file..
+
+
+## Code running commands ##
+-> build or compile program 
+   Step 1: `make`  
+-> runs program, allowing to test its functionality.
+   Step 2: `./test1`
+-> check for memory leaks and to track the origins of uninitialized values 
+   step 3: `valgrind --leak-check=full --track-origins=yes ./test1`
+
+
+
+### Functions of Storage manger ##
+
+Initialization of Strorage manager
+**void initStorageManager** 
+
+## File Operations ##
+-> **createPageFile**: creates a new page file with the specified name and sets its initial contents to one blank page.  
+-> **openPageFile**: opens and initializes the file handle of an already-existing page file. 
+-> **closePageFile**: Closes the opened file. 
+-> **destroyPageFile**: Removes the existing page file.  
+
+
+## Block Operations ##
+-> **readBlock**: Reads a perticular block into memory.  
+-> **getBlockPos**: Returns the current page position.  
+-> **readFirstBlock**: Reads the first block of the file into memory.  
+-> **readPreviousBlock**: Reads the previous block relative to the current page into memory.  
+-> **readCurrentBlock**: Reads the current block into memory.  
+-> **readNextBlock**: Reads the next block relative to the current page into memory. 
+-> **readLastBlock**: Reads the last block of the file into memory.  
+-> **writeBlock**: Writes a block from memory to a specific page.  
+-> **RC writeCurrentBlock**: Writes the current block from memory to its current position. 
+-> **appendEmptyBlock**: Appends an empty block to the end of the file.  
+
+
+## Capacity Management ##
+-> **RC ensureCapacity** : Ensures that the file has a minimum capacity of 'numberOfPages' by appending empty blocks if necessary.  
+
+
+## In Summary ##
+-> A useful tool for database systems and file handling programs, the Storage Manager module offers fundamental file management and block manipulation functionalities. Effective creation, opening, reading, and writing to page files can be accomplished by using the functionalities that are offered.

@@ -1,15 +1,15 @@
-## Storage Manager CS-525 Assignment 1
+## Storage Manager CS-525 Assignment 1 ##
 The Storage Manager is a module designed to manage files on disk and provide operations for reading and writing blocks of data. This module deals with pages (blocks) of a fixed size (PAGE_SIZE), and it is a fundamental component of many database systems. This README provides an overview of the Storage Manager project, its functionalities, and how to use it.
 
 
-## Group Members
+## Group Members ##
 1. Carlos Moreno Andres (A20553013)
 2. Pablo Gomez
 3. Anshuman Raturi (A20531913)
 4. Shubham Kapopara (A20561911)
 
 
-## Aim 
+## Aim ##
 The aim of this assignment is to implement a storage manager capable of performing the below tasks:
 - > Creating, opening, and closing files.
 - > Writing blocks from memory to a file.

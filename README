@@ -56,6 +56,13 @@ Initialization of Strorage manager
 ## Capacity Management ##
 -> **ensureCapacity** : Ensures that the file has a minimum capacity of 'numberOfPages' by appending empty blocks if necessary.  
 
+### Tests we have tried ###
+
+->**testCreateOpenClose**: Ensures correct file creation, opening, and closing functionalities.
+->**testSinglePageContent**: Verifies the accurate reading and writing of content on a single page.
+->**testReadWriteMultiplePages**: Validates the handling of reading and writing content across multiple pages.
+->**testAppendEmptyBlock**: Tests the functionality to append an empty block to a file.
+->**testEnsureCapacity**: Checks the capability to ensure the desired capacity by adding empty pages to a file.
 
 ## In Summary ##
 -> A useful tool for database systems and file handling programs, the Storage Manager module offers fundamental file management and block manipulation functionalities. Effective creation, opening, reading, and writing to page files can be accomplished by using the functionalities that are offered.
